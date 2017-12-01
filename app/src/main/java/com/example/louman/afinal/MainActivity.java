@@ -14,6 +14,8 @@ package com.example.louman.afinal;
 public class MainActivity extends AppCompatActivity {
 
     private Button buttonStart;
+    public static int experience;
+public static int level;
 
 
 

@@ -50,11 +50,16 @@ public class CustomAdapter extends BaseAdapter {
                     value = "un-Checked";
                     simpleCheckedTextView.setCheckMarkDrawable(0);
                     simpleCheckedTextView.setChecked(false);
+
+                    if(MainActivity.experience > 0)
+                        MainActivity.experience--;
                 } else {
 // set cheek mark drawable and set checked property to true
                     value = "Checked";
                     simpleCheckedTextView.setCheckMarkDrawable(R.drawable.checked);
                     simpleCheckedTextView.setChecked(true);
+
+                    MainActivity.experience++;
                 }
                 Toast.makeText(context, value, Toast.LENGTH_SHORT).show();
             }

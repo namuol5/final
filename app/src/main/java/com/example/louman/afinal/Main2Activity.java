@@ -20,11 +20,9 @@ package com.example.louman.afinal;
         import java.util.Date;
 
 public class Main2Activity extends AppCompatActivity {
-
     String value;
-    String[] superStarNames = {"John Cena", "Randy Orton", "Triple H", "Roman Reign", "Sheamus"};
-
-
+    String[] superStarNames = {"Feed the cats", "Give the cats dental chews", "Unplug cords", "Lights off", "Lock the doors/close garage door"};
+    private Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +33,18 @@ public class Main2Activity extends AppCompatActivity {
         // set the adapter to fill the data in ListView
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), superStarNames);
         listView.setAdapter(customAdapter);
+
+        button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+                                           @Override
+                                           public void onClick(View view) {
+                                               Intent intent = new Intent(view.getContext(), Main3Activity.class);
+                                               startActivity(intent);
+
+                                           }
+    });
     }
-    }
+}
 
 
 
