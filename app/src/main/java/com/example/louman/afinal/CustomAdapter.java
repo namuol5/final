@@ -47,7 +47,7 @@ public class CustomAdapter extends BaseAdapter {
             public void onClick(View v) {
                 if (simpleCheckedTextView.isChecked()) {
 // set cheek mark drawable and set checked property to false
-                    value = "un-Checked";
+                    value = "oops! -1 exp";
                     simpleCheckedTextView.setCheckMarkDrawable(0);
                     simpleCheckedTextView.setChecked(false);
 
@@ -55,7 +55,7 @@ public class CustomAdapter extends BaseAdapter {
                         MainActivity.experience--;
                 } else {
 // set cheek mark drawable and set checked property to true
-                    value = "Checked";
+                    value = "Completed! +1 exp!";
                     simpleCheckedTextView.setCheckMarkDrawable(R.drawable.checked);
                     simpleCheckedTextView.setChecked(true);
 

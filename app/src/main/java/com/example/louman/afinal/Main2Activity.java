@@ -21,7 +21,7 @@ package com.example.louman.afinal;
 
 public class Main2Activity extends AppCompatActivity {
     String value;
-    String[] superStarNames = {"Feed the cats", "Give the cats dental chews", "Unplug cords", "Lights off", "Lock the doors/close garage door"};
+    String[] superStarNames = {"Feed the cats", "Give the cats dental chews", "Unplug cords", "Lights off", "Lock the doors/close garage door", "Grocery shopping", "Do homework"};
     private Button button3;
 
     @Override
